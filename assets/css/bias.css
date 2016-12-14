@@ -1,0 +1,157 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Istok Web', sans-serif;
+  color: rgb(160, 248, 254);
+  padding: 3% 0%;
+  margin: 0;
+  text-shadow: 1px 1px 5px rgb(160, 248, 254);
+  font-size: 50px;
+}
+
+header {
+  position: relative;
+  top: -30px;
+  margin: 2% auto 0%;
+  border-bottom: 3px solid rgb(130, 210, 200);
+  max-width: 100%;
+  text-align: center;
+  background-color: rgb(130, 130, 130);
+}
+
+#main {
+    margin: 3% auto 2%;
+    line-height: 1.5;
+    max-width: 50%;
+    border: 3px groove rgb(160, 248, 254);
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+#buttons {
+  margin: 1% auto 10%;
+  max-width: 50%;
+}
+
+#buttons:after {
+  content: "";
+  width: 0;
+  clear: both;
+}
+
+button {
+    float: left;
+    border: 3px groove rgb(160, 248, 254);
+    border-radius: 5%;
+    padding: 1.5%;
+    background-color: rgb(78, 217, 208);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 1px 10px black;
+    box-sizing: border-box;
+}
+
+#next {
+    float: right;
+    border: 3px groove rgb(160, 248, 254);
+    border-radius: 5%;
+    padding: 1.5%;
+    background-color: rgb(78, 217, 208);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 1px 10x black;
+    box-sizing: border-box;
+}
+
+#back {
+  float: right;
+  margin-right: 1.5%;
+  display: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+#clear {
+  clear: both;
+}
+
+.fade {
+  transition: 1s ease-out;
+}
+
+@media only screen and (max-width: 980px) {
+
+  #main, #buttons {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #main, #buttons {
+    max-width: 80%;
+  }
+
+  h1 {
+    padding: 4% 0%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+
+  h1 {
+    font-size: 40px;
+    padding: 5% 0% 3%;
+  }
+
+  #next, #back, button {
+    font-size: 20px;
+  }
+
+  #main, #buttons {
+    max-width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 433px) {
+
+  h1 {
+    font-size: 35px;
+    padding: 10% 0% 7%;
+  }
+
+  #next, #back, button {
+    font-size: 20px;
+  }
+
+  #main, #buttons {
+    max-width: 95%;
+  }
+
+}
+
+@media only screen and (max-width: 381px) {
+
+  h1 {
+    font-size: 28px;
+    padding: 10% 0% 7%;
+  }
+
+  #next, #back, button {
+    font-size: 17px;
+  }
+
+  #main, #buttons {
+    max-width: 97%;
+  }
+
+}
